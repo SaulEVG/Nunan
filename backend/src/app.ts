@@ -7,7 +7,7 @@ const app = express();
 
 app.use(cors());
 app.get("/", (req, res) => {
-  res.status(200).send({ message: "Hola perro" });
+  return res.status(200).send({ message: "Hola perro" });
 });
 app.use("/api", router);
 app.listen(PORT, () => {
